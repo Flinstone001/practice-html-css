@@ -1,0 +1,55 @@
+:root {
+  --nav-width: 200px;
+}
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+#navbar {
+  margin-top: 1.3rem;
+  border-right: 1px solid rgba(128, 128, 128, 0.5);
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: var(--nav-width);
+}
+
+#navbar header {
+  margin: 1rem 0;
+  padding-right: 0.5rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+#navbar a:hover {
+  color: blue;
+}
+
+#main-doc {
+  margin: 0.5rem 1rem;
+  margin-left: var(--nav-width);
+}
+#main-doc header {
+  font-size: 2rem;
+}
+
+#main-doc section {
+  margin-bottom: 3rem;
+}
+#main-doc section:last-child {
+  margin-bottom: 0;
+}
+
+code {
+  background: lightgrey;
+  padding: 0.5rem 0.5rem;
+}
